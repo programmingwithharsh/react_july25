@@ -6,8 +6,8 @@ import Title from './Title';
 import Star from './Star';
 
 export default class Main extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         console.log("Constructor - 1");
         this.state = {
             address: "Mumbai",
@@ -22,15 +22,19 @@ export default class Main extends React.Component {
     render() { // Class Component Lifecycle
         console.log("Render - 2");
         console.log(this.state);
+        console.log(this.props);
         return <div>
             <h1>This is Main Class Component</h1>
             <h2>State is, I am living in {this.state.address}</h2>
             <button onClick={this.updateAddress}>Update Address</button>
+            <h2>Props username is {this.props.usernameProps}</h2>
+            <h2>Props hobbies is {this.props.hobbiesProps[0]}</h2>
+            <h2>Props place is {this.props.birthProps.place}</h2>
             <ProductList />
             <AddProduct />
             <Welcome />
-            <Title />
-            <Star />
+            <Title username="Tushar" />
+            <Star rating="5" />
         </div>
     }
 }
