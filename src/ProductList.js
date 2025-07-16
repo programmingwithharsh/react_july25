@@ -1,4 +1,5 @@
-import Product from './Product';
+// import Product from './Product';
+import Star from './Star';
 
 export default function ProductList(props) {
     console.log(props.products);
@@ -26,7 +27,7 @@ export default function ProductList(props) {
                         <td>{product.releaseDate}</td>
                         <td>{product.description}</td>
                         <td>{product.price}</td>
-                        <td>{product.starRating}</td>
+                        <td><Star rating={product.starRating} /></td>
                         <td><button className="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Delete</button></td>
                     </tr>
                 ))}
