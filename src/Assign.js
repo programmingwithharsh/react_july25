@@ -58,7 +58,7 @@ Logout -> Display Logout message class or functional component
 For reference - https://github.com/programmingwithharsh/react_july25/
 Note Once completed, add code in the private comment and mark as done, Format code
 
-Assignment 5 - Display Star based on rating
+Assignment 4 - Display Star based on rating
 As discussed Display Star based on rating props, incase 5 rating display 5 Star
 
 */
