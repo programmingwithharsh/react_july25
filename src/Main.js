@@ -5,6 +5,8 @@ import Welcome from './Welcome';
 import Title from './Title';
 import Star from './Star';
 import CoreBootstrap from './core-bootstrap/CoreBootstrap';
+import ReactBoostrap from './react-bootstrap/ReactBoostrap';
+
 export default class Main extends React.Component {
     constructor(props) {
         super(props);
@@ -76,13 +78,14 @@ export default class Main extends React.Component {
         console.log(this.state);
         console.log(this.props);
         return <div>
+            <ReactBoostrap />
             <CoreBootstrap />
             <h1>This is Main Class Component</h1>
             <h2>State is, I am living in {this.state.address}</h2>
             <button onClick={this.updateAddress} className="btn btn-primary">Update Address</button>
             <h2>Props username is {this.props.usernameProps}</h2>
             <h2>Props hobbies is {this.props.hobbiesProps[0]}</h2>
-            <h2>Props place is {this.props.birthProps.place}</h2> 
+            <h2>Props place is {this.props.birthProps.place}</h2>
             <ProductList products={this.state.products} />
             <AddProduct />
             <Welcome />
