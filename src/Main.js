@@ -6,6 +6,7 @@ import Title from './Title';
 import Star from './Star';
 import CoreBootstrap from './core-bootstrap/CoreBootstrap';
 import ReactBoostrap from './react-bootstrap/ReactBoostrap';
+import Register from './Register';
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -78,8 +79,9 @@ export default class Main extends React.Component {
         console.log(this.state);
         console.log(this.props);
         return <div>
-            <ReactBoostrap />
+            <Register />
             <CoreBootstrap />
+            <ReactBoostrap />
             <h1>This is Main Class Component</h1>
             <h2>State is, I am living in {this.state.address}</h2>
             <button onClick={this.updateAddress} className="btn btn-primary">Update Address</button>
