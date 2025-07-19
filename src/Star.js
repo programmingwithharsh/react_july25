@@ -1,12 +1,23 @@
-function Star(props) {
-    return <>
-        {props.rating}
-        <span className="fa fa-star"></span>
-        <span className="fa fa-star"></span>
-        <span className="fa fa-star"></span>
-        <span className="fa fa-star"></span>
-        <span className="fa fa-star"></span>
-    </>
+import './Star.css';
+
+function Star({ rating }) {
+    const totalStars = 5;
+    const stars = [];
+
+    for (let i = 1; i <= totalStars; i++) {
+        stars.push(
+            <span
+                key={i}
+                className={`fa fa-star${i <= rating ? ' checked' : ''}`}
+            ></span>
+        );
+    }
+
+    return (
+        <>
+            {stars}
+        </>
+    );
 }
 
 export default Star;

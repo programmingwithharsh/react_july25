@@ -3,10 +3,11 @@ import ProductList from './ProductList';
 import AddProduct from './AddProduct';
 import Welcome from './Welcome';
 import Title from './Title';
-import Star from './Star';
 import CoreBootstrap from './core-bootstrap/CoreBootstrap';
 import ReactBoostrap from './react-bootstrap/ReactBoostrap';
 import Register from './Register';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from './core-bootstrap/Nav';
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -78,21 +79,18 @@ export default class Main extends React.Component {
         console.log("Render - 2");
         console.log(this.state);
         console.log(this.props);
-        return <div>
-            <Register />
-            <CoreBootstrap />
-            <ReactBoostrap />
-            <h1>This is Main Class Component</h1>
-            <h2>State is, I am living in {this.state.address}</h2>
-            <button onClick={this.updateAddress} className="btn btn-primary">Update Address</button>
-            <h2>Props username is {this.props.usernameProps}</h2>
-            <h2>Props hobbies is {this.props.hobbiesProps[0]}</h2>
-            <h2>Props place is {this.props.birthProps.place}</h2>
-            <ProductList products={this.state.products} />
-            <AddProduct />
-            <Welcome />
-            <Title username="Tushar" />
-            <Star rating="5" />
-        </div>
+        return <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Nav />}>
+                    <Route index element={<Welcome />} />
+                    <Route path="/products" element={<ProductList products={this.state.products} />} />
+                    <Route path="/addproduct" element={<AddProduct />} />
+                    <Route path="/title" element={<Title username="Tushar" />} />
+                    <Route path="/corebootstrap" element={<CoreBootstrap />} />
+                    <Route path="/reactbootstrap" element={<ReactBoostrap />} />
+                </Route>
+                <Route path="/register" element={<Register />} />
+            </Routes>
+        </BrowserRouter>
     }
 }

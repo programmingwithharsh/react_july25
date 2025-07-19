@@ -61,4 +61,84 @@ Note Once completed, add code in the private comment and mark as done, Format co
 Assignment 4 - Display Star based on rating
 As discussed Display Star based on rating props, incase 5 rating display 5 Star
 
+Assignment 5 - Implement React Routing
+
+Create menu (Nav.js) which contains Group Chat | Manage Users | Manage Documents | Logout as per screenshot 
+When user click on Group Chat call ChatList component 
+When user click on Manage Users call UserList component 
+When user click on Manage Documents call DocumentList component 
+When user click on Logout call Logout component 
+By default Welcome component 
+Step 1
+npm i react-router-dom
+
+Step 2
+Create Nav Component, Nav.js which contains below code
+
+import { Link, Outlet } from 'react-router-dom';
+
+function Nav() {
+return <>
+<nav className="navbar navbar-expand-lg bg-primary">
+<div className="container-fluid">
+<a className="navbar-brand" href="/">Dashboard</a>
+<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span className="navbar-toggler-icon"></span>
+</button>
+<div className="collapse navbar-collapse" id="navbarSupportedContent">
+<ul className="navbar-nav me-auto mb-2 mb-lg-0">
+<li className="nav-item">
+<Link className="nav-link active" to="/">Home</Link>
+</li>
+<li className="nav-item">
+<Link className="nav-link" to="/products">Products</Link>
+</li>
+<li className="nav-item">
+<Link className="nav-link" to="/addproduct">Add Product</Link>
+</li>
+<li className="nav-item">
+<Link className="nav-link" to="/title">Title</Link>
+</li>
+<li className="nav-item">
+<Link className="nav-link" to="/corebootstrap">Core Bootstrap</Link>
+</li>
+<li className="nav-item">
+<Link className="nav-link" to="/reactbootstrap">React Bootstrap</Link>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div className='container-fluid mt-2'>
+<Outlet />
+</div>
+</>
+}
+
+export default Nav;
+
+Step 3
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from './core-bootstrap/Nav';
+
+render() { // Class Component Lifecycle
+console.log("Render - 2");
+console.log(this.state);
+console.log(this.props);
+return <BrowserRouter>
+<Routes>
+<Route path="/" element={<Nav />}>
+<Route index element={<Welcome />} />
+<Route path="/products" element={<ProductList products={this.state.products} />} />
+<Route path="/addproduct" element={<AddProduct />} />
+<Route path="/title" element={<Title username="Tushar" />} />
+<Route path="/corebootstrap" element={<CoreBootstrap />} />
+<Route path="/reactbootstrap" element={<ReactBoostrap />} />
+</Route>
+<Route path="/register" element={<Register />} />
+</Routes>
+</BrowserRouter>
+}
+
 */

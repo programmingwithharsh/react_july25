@@ -29,7 +29,8 @@ function Register() {
         const user = {
             id: Date.now(),
             name: fullname,
-            email: email
+            email: email,
+            password: password
         };
 
         const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
@@ -38,7 +39,6 @@ function Register() {
 
         alert("Registration successful!");
 
-        // Optionally, clear the form
         setFormData({
             fullname: '',
             email: '',
