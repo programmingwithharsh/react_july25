@@ -50,8 +50,6 @@ http://localhost:3000/chats -> Display Chats page
 http://localhost:3000/upload -> Display uploads page
 
 
-
-
 Home | Products | Add Product | Title | Core Bootstrap
 
 Welcome | ProductList | AddProduct | Title | CoreBootstrap | ReactBootstrap
@@ -126,12 +124,23 @@ React Without JSX
 React With JSX
 React Expression  - {}
 
-
-
-
 <h1>This is Main Class Component</h1>
 <h2>State is, I am living in {this.state.address}</h2>
 <button onClick={this.updateAddress} className="btn btn-primary">Update Address</button>
 <h2>Props username is {this.props.usernameProps}</h2>
 <h2>Props hobbies is {this.props.hobbiesProps[0]}</h2>
 <h2>Props place is {this.props.birthProps.place}</h2>
+
+http://localhost:3000/products/1 -> Display Product Detail page 
+http://localhost:3000/products/2 
+http://localhost:3000/products/3
+http://localhost:3000/products/4
+
+Product detail 
+Get params from url - useParams
+Page not found
+Navigate using functional or class component
+
+ostraining2025@gmail.com
+
+20 Minutes break, will resume after 20 minutes
