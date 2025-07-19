@@ -1,5 +1,6 @@
 React Routing Installation 
 React Routing Configuration
+
 Page not found
 Navigate using Functional component
 Navigate using Class component
@@ -142,5 +143,3 @@ Page not found
 Navigate using functional or class component
 
 ostraining2025@gmail.com
-
-20 Minutes break, will resume after 20 minutes

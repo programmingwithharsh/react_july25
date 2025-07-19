@@ -141,4 +141,66 @@ return <BrowserRouter>
 </BrowserRouter>
 }
 
+Assignment 6 - Display users list from local storage in browser
+
+1. Create UserList class component
+2. Define state inside UserList class component, for example below
+this.state = {
+users: [
+],
+}
+
+Store below users in local storage using localstorage.setItem
+
+[{
+id: 1,
+name: "Text User",
+email: "textuser@gmail.com"
+},
+{
+id: 2,
+name: "Anne Hunter",
+email: "annehunter@mail.com"
+},
+{
+id: 3,
+name: "Jale Boser",
+email: "jale@yahoo.com"
+}]
+
+Get item from localstorage, localstorage.getItem and update this.state users 
+
+Use this.setState({
+    users: localstorageUsers
+})
+
+JSON.stringify - Convert Object into String
+JSON.parse - Convert String into Object
+
+3. Iterate this.state.users using map function and display users list in browser, for example
+
+render() { // lifecycle 2
+return <div>
+<h1>User list from API call</h1>
+<table border="1" cellSpacing="0">
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+</tr>
+</thead>
+<tbody>
+{
+this.state.users.map((item, index) => (
+<tr key={index}>
+<td>{item.name}</td>
+<td>{item.email}</td>
+</tr>
+))
+}
+</tbody>
+</table>
+</div>
+}
+
 */
