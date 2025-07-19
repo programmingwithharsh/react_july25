@@ -1,34 +1,61 @@
+import React, { useState } from 'react';
+
 function Register() {
+    const [formData, setFormData] = useState({
+        fullname: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+    });
 
-    const handleSubmit = () => {
+    const handleChange = (e) => {
+        const { id, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [id]: value
+        }));
+    };
 
-        /*
+    const handleSubmit = (e) => {
+        e.preventDefault();
 
-        // GET Form value in a variable let's say
+        const { fullname, email, password, confirmPassword } = formData;
 
-        let user = {
-            id: Number(new Date()),
-            name: "Text User", // get it from form
-            email: "textuser@gmai.com" // get it from form
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return;
         }
 
-        let users = localStorage.getItem("users") ? JSON.parse(localStorage.getItem("users")) : [];
-        users.push(user);
-        localStorage.setItem("users", JSON.stringify(users))
+        const user = {
+            id: Date.now(),
+            name: fullname,
+            email: email
+        };
 
-        */
+        const existingUsers = JSON.parse(localStorage.getItem("users")) || [];
+        existingUsers.push(user);
+        localStorage.setItem("users", JSON.stringify(existingUsers));
 
-    }
+        alert("Registration successful!");
 
-    return <>
+        // Optionally, clear the form
+        setFormData({
+            fullname: '',
+            email: '',
+            password: '',
+            confirmPassword: ''
+        });
+    };
+
+    return (
         <form onSubmit={handleSubmit}>
-            Fullname <input type="text" id="fullname" />
-            Email <input type="email" id="email" />
-            Password <input type="text" id="password" />
-            Confirm Password <input type="text" id="confirmPassword" />
+            Fullname <input type="text" id="fullname" value={formData.fullname} onChange={handleChange} required />
+            Email <input type="email" id="email" value={formData.email} onChange={handleChange} required />
+            Password <input type="password" id="password" value={formData.password} onChange={handleChange} required />
+            Confirm Password <input type="password" id="confirmPassword" value={formData.confirmPassword} onChange={handleChange} required />
             <input type="submit" value="Register" />
         </form>
-    </>
+    );
 }
 
 export default Register;
