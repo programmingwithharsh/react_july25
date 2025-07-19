@@ -1,19 +1,17 @@
 React Routing Installation 
 React Routing Configuration
-
-Page not found
-Navigate using Functional component
+Created Routes
+Display Navigation for specific component
 Navigate using Class component
 Conditional Rendering in JSX
+Page not found
+Navigate using Functional component
 Dynamic Link
 Dynamic Url
 Get params from url
-
 React Styling
-React Styling Inline css
 Using External CSS
 Reusable Component
-
 ES6 Features
 Map and Set
 Template Literals
@@ -25,7 +23,7 @@ Rest of items
 Merge array
 Merge Object
 Debugging
-Assignment
+Assignments
 Project Update
 
 Routing 
@@ -137,9 +135,23 @@ http://localhost:3000/products/2
 http://localhost:3000/products/3
 http://localhost:3000/products/4
 
+http://localhost:3000/products/:id -> Dynamic id
+
+
 Product detail 
 Get params from url - useParams
 Page not found
 Navigate using functional or class component
 
 ostraining2025@gmail.com
+
+
+
+Main Component (Parent Component)
+    this.state = products
+        ProductList Component (Child)
+        AddProduct Component (Child)
+
+Upcoming Session
+Module CSS 
+SCSS

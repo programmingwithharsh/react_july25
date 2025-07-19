@@ -1,0 +1,91 @@
+Day 1
+Lab setup
+Client side vs Server side vs Database vs Nosql database
+Prerequisite - HTML, CSS and Javascript
+HTML and CSS Important Concepts
+Javascript Fundamentals
+Variable, String, Array and Object
+Function, Nested object and Array
+JSON
+Question and Answer
+ES6 Features
+let and const
+function, function as a variable
+local vs global variable
+arrow function
+prototype
+contructor function
+lexical scoping using arrow function
+class
+property
+method
+static method
+Inheritance 
+React Installation
+Pre assessment
+Feedback
+Project Discussion - Communication Application
+Important Links
+Assignment
+
+Day 2
+React Installation Via Vite
+Print name in Browser using React
+React Single Page Application
+React Introduction
+React Features
+React Without JSX
+React With JSX
+React Expression
+React Component
+Class Component
+Functional Component
+Nested Component
+Class Component Lifecycle
+Mounting - constructor, render and componentDidMount
+State in class Component
+Update State in class Component
+React Event
+React Props
+Use Props in class component
+Use Props in functional component
+Core Bootstrap
+React Core Bootstrap
+React Bootstrap Module
+Bootstrap Button, Table, Modal, Carousel, Nav, Accordion and Progress
+React Bootstrap Button, Table, Carousel, Nav, Accordion and Progress
+React Localstorage
+React form
+React Font-awesome
+Assignments
+React Styling inline CSS
+Project Welcome Component
+
+Day 3
+React Routing Installation 
+React Routing Configuration
+Created Routes
+Display Navigation for specific component
+Navigate using Class component
+Conditional Rendering in JSX
+Page not found
+Navigate using Functional component
+Dynamic Link
+Dynamic Url
+Get params from url
+React Styling
+Using External CSS
+Reusable Component
+ES6 Features
+Map and Set
+Template Literals
+Convert array into string
+Convert string into array
+Array and Object Destrucuting
+Spread operator
+Rest of items
+Merge array
+Merge Object
+Debugging
+Assignments
+Project Update
