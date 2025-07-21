@@ -211,4 +211,9 @@ https://jsonplaceholder.typicode.com/albums
 
 and display Albums title in the browser
 
+Notes
+useState 
+useEffect
+axios module
+
 */
