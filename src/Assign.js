@@ -203,4 +203,12 @@ this.state.users.map((item, index) => (
 </div>
 }
 
+Assignment 7 - Consume GET API using React axios module
+
+Create Document List Functional Component, using useEffect, consume below API
+
+https://jsonplaceholder.typicode.com/albums
+
+and display Albums title in the browser
+
 */
