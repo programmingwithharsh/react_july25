@@ -28,8 +28,11 @@ function Nav() {
                         <li className="nav-item">
                             <Link className="nav-link" to="/reactbootstrap">React Bootstrap</Link>
                         </li>
-                         <li className="nav-item">
+                        <li className="nav-item">
                             <Link className="nav-link" to="/users">Users</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/hooks">Hooks</Link>
                         </li>
                     </ul>
                 </div>

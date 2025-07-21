@@ -11,6 +11,7 @@ import Nav from './core-bootstrap/Nav';
 import UserList from './UserList';
 import PageNotFound from './PageNotFound';
 import ProductDetail from './ProductDetail';
+import HooksExample from './Hooks/HooksExample';
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -108,6 +109,7 @@ export default class Main extends React.Component {
                     <Route path="/reactbootstrap" element={<ReactBoostrap />} />
                     <Route path="/users" element={<UserList />} />
                     <Route path="/productDetail/:id" element={<ProductDetail />} />
+                    <Route path="/hooks" element={<HooksExample />} />
                 </Route>
                 <Route path="/register" element={<Register />} />
                 <Route path="*" element={<PageNotFound />} />
