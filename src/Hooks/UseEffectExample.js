@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import axios from 'axios';
 
 function UseEffectExample() {
 
     const [data, setData] = useState([{ "name": "Ajay" }]); // default data is empty array
+    const [users, setUsers] = useState([]);
     /*
         
         Class 
@@ -22,16 +24,40 @@ function UseEffectExample() {
         )
             .then((response) => response.json())
             .then((responseData) => {
-                console.log(responseData);
+                console.log("Fetch", responseData);
                 setData(responseData);
             });
     }, []);
 
+    useEffect(() => {
+        axios.get('http://localhost:4000/users')
+            .then(function (response) {
+                // handle success
+                console.log("Axios", response);
+                setUsers(response.data)
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
+            .finally(function () {
+                // always executed
+            });
+    }, [])
+
+
     return <>
-        <h1>Use Effect Example</h1>
+        <h1>Use Effect Example - List of Users using fetch method</h1>
         {data.map((item, index) => (
             <div key={index}>
                 {item.name}
+            </div>
+        ))}
+
+        <h1>Use Effect Example - List of Users using axios module</h1>
+        {users.map((item, index) => (
+            <div key={index}>
+                {item.email}
             </div>
         ))}
     </>

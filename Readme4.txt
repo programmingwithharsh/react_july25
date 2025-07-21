@@ -10,7 +10,6 @@ Create GET, POST, PUT and DELETE API using Nodejs Express Framework
 Fixed CORS issue
 Use postman to consume APIs
 Use React to consume APIs
-
 Axios Module
 Fetch vs Axios
 
