@@ -12,19 +12,20 @@ Use postman to consume APIs
 Use React to consume APIs
 Axios Module
 Fetch vs Axios
-
 useReducer
-useRef 
-Controlled vs Uncontrolled component
 withoutContext
 createContext
 useContext
-Custom hooks
 Pure class component
-
-
 Assignment
 Project Update
+
+
+Next session
+
+useRef 
+Controlled vs Uncontrolled component
+Custom hooks
 
 
 
@@ -87,3 +88,25 @@ module.exports = module_name
 ES6 Module Concept
 import { MongoClient } from 'mongodb'
 export module_name
+
+useReducer Hooks
+
+Reducer function - Update state based on action
+Actions 
+    ProductListRequest - state is empty here
+    ProductListSuccess - state is having data 
+    ProductListFail - state is error
+
+    increment 
+    decrement 
+    reset
+
+State - data 
+
+Redux - State Management
+
+Reducer 
+Actions 
+State 
+Devtool
+

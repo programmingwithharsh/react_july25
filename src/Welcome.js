@@ -1,8 +1,12 @@
 import React from "react";
-class Welcome extends React.Component {
+// class Welcome extends React.Component {
+class Welcome extends React.PureComponent {
     constructor() {
         super();
         console.log('Constructor - 1');
+        this.state = {
+            username: "Pramod"
+        }
     }
 
     componentDidMount() {
@@ -48,9 +52,20 @@ class Welcome extends React.Component {
         console.log(JSON.parse(localStorage.getItem("users")));
     }
 
+    updateUsername = () => {
+        this.setState({
+            username: "Rushabh"
+        })
+    }
+
     render() {
         console.log('Render - 2');
-        return <h1>This is Welcome Class Component</h1>
+        console.log(this.state.username);
+        return <>
+            <h1>This is Welcome Class Component</h1>
+            <p>Username is {this.state.username}</p>
+            <button className="btn btn-secondary" onClick={this.updateUsername}>Update username</button>
+        </>
     }
 }
 
