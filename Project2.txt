@@ -1,0 +1,140 @@
+Project - Ecommerce website
+
+Part 1 - User interface Using Next.js
+Part 2 - Creating APIs
+
+User Part 1
+
+1. User registration and User login is Mandatory for shopping
+2. After login redirect to Home page
+3. When user click on add to cart, add product in cart, display cart {count} in top menu
+4. When user click on top menu cart then display cart details page.
+5. When user click on buy now display product details page
+6. When user click on buy now, display Shopping details page, add items in cart {count}
+7. On cart details page display product remove option as per wireframe
+8. When user click on proceed to payment, display product details page
+9. When user click on confirm order, display order confirm page.
+
+Admin part 2
+
+1. Admin login
+2. Display categories and products hyperlink along with logout option after login.
+3. Display categories list when user click on categories link, display products list when user click on products.
+4. Categories list
+
+Display categories list along with edit and delete option
+Add category option
+When user click on edit display edit category page - form validation here
+When user click on delete category display confirm modal - use Bootstrap Modal
+On Add Category page - form validation here
+
+5. Products list
+Display product list along with edit and delete option
+Add product option
+When user click on edit edit product page - form validation here
+When user click on delete product display confirm modal - use Bootstrap Modal
+On Add Product page - form validation here - dynamic category list
+
+Use Bootstrap Components
+Carousel
+Card
+Modal
+Navbar
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1. Implement register functionality for admin and do login
+2. Admin is having below rights
+
+List, Add, Edit, Delete Product
+
+On Product list page, implement below functionality
+
+- Display list of products
+- Display add, edit and delete option
+
+On Add Product page, implement below functionality
+
+- Display add product page for add product
+- Use HTML form
+- Do validation using next.js
+- Store products in Mongodb
+- Display dynamic category name in dropdown 
+
+On Update Product page, implement below functionality
+
+- Display edit product for edit product
+- Use HTML form
+- Do validation using Next.js form
+- Update product in Mongodb based on product id
+
+On delete product page, implement below functionality
+
+- Display bootstrap modal for delete product
+- Once we confirm delete, delete product and update Mongodb
+
+List, Add, Edit, Delete Category
+
+On Category list page, implement below functionality
+
+- Display list of categories
+- Display add, edit and delete option
+
+On Add Category page, implement below functionality
+
+- Display add category page for add category
+- Use HTML form
+- Do validation using next.js form
+- Store categories in Mongodb
+
+On Update Category page, implement below functionality
+
+- Display edit category for edit category
+- Use HTML form
+- Do validation using next.js form
+- Update category in Mongodb based on category id
+
+On delete category page, implement below functionality
+
+- Display bootstrap modal for delete category
+- Once we confirm delete, delete category and update Mongodb
+
+3. Display dynamic home page, minimum 5
+4. Display slider on home page
+5. Display shopping page
+6. Once we click on add to cart, add cart product in Mongodb
+7. Once we click on buy now, Display dynamic product detail page
+8. Once we click on remove button on cart detail page, remove all products from cart and update Mongodb.
+9. Once we click on purchase order, display shipping details page
+10. On Shipping details page, implement below functionality
+
+- Use next.js form
+- Do validation using next. 
+- Store Shipping details in Mongodb
+- and proceed to payment
+
+11. Store payment option inside Mongodb
+12. Fetch shipping and payment details from Mongodb and display on order confirmation page.
+
+Project Marks (100)
+
+1. Proper folder structure and file name - 5 Marks
+2. Format code - 5 Marks
+3. Proper comments - 5 Marks
+4. Proper Naming convention - 5 Marks
+Either user camelcase 
+loyaltyprogram
+
+for example
+loyaltyProgram
+
+5. Always use class instead of Id for CSS - 5 Marks
+6. Use External CSS - 5 Marks
+7. UI should be same as Project Wireframe - 25 Marks
+8. Individual Marks - 45 Marks 
+
+Note
+
+1. Follow Top to Bottom approach
+2. Share Github url
+3. You can use Bootstrap Modal version 5
+4. Use Static / Hard Code Content
