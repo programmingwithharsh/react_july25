@@ -89,3 +89,50 @@ Merge Object
 Debugging
 Assignments
 Project Update
+
+Day 4
+Functional Component Hooks
+useState
+useEffect
+Consume API using Javascript fetch method
+Types of Module in Nodejs
+Built in module 
+Third Party Module
+User defined or custom module
+Create GET, POST, PUT and DELETE API using Nodejs Express Framework
+Fixed CORS issue
+Use postman to consume APIs
+Use React to consume APIs
+Axios Module
+Fetch vs Axios
+useReducer
+withoutContext
+createContext
+useContext
+Pure class component
+Assignment
+Project Update
+
+Day 5
+useRef 
+Controlled vs Uncontrolled component
+Custom hooks
+Class Component lifecycle
+getDerivedStateFromProps
+shouldComponentUpdate
+getSnapshotBeforeUpdate
+componentDidUpdate
+componentWillUnmount
+Redux
+Reducer
+Action
+State Management
+Redux Debugger
+Redux Devtool
+React Typescript Installation
+State and Props using React Typescript
+Assignment 
+Project Update
+
+Upcoming
+Next.js
