@@ -12,6 +12,7 @@ import UserList from './UserList';
 import PageNotFound from './PageNotFound';
 import ProductDetail from './ProductDetail';
 import HooksExample from './Hooks/HooksExample';
+import { removeProduct, addProduct, loadProducts } from './redux/actions';
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -82,6 +83,19 @@ export default class Main extends React.Component {
         this.setState({
             products: JSON.parse(localStorage.getItem("products"))
         })
+
+        this.props.dispatch(removeProduct(1)); // calling remove product action
+        this.props.dispatch(addProduct({
+            "productId": 6,
+            "productName": "iPhone",
+            "productCode": "100",
+            "releaseDate": "March 19, 2016",
+            "description": "iphone is very good phone",
+            "price": 80000,
+            "starRating": 5,
+            "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
+        }));
+        this.props.dispatch(loadProducts());
     }
 
     updateAddress = () => {

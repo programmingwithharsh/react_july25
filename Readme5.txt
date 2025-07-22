@@ -1,20 +1,24 @@
-useRef 
-Controlled vs Uncontrolled component
-Custom hooks
-Class Component lifecycle
-getDerivedStateFromProps
-shouldComponentUpdate
-getSnapshotBeforeUpdate
-componentDidUpdate
-componentWillUnmount
 Redux
 Reducer
 Action
 State Management
 Redux Debugger
 Redux Devtool
+
 React Typescript Installation
 State and Props using React Typescript
+
+useRef 
+Controlled vs Uncontrolled component
+Custom hooks
+
+Class Component lifecycle
+getDerivedStateFromProps
+shouldComponentUpdate
+getSnapshotBeforeUpdate
+componentDidUpdate
+componentWillUnmount
+
 Assignment 
 Project Update
 
@@ -24,7 +28,7 @@ Mounting
     constructor() - done 
     render() - done 
     static getDerivedStateFromProps(props, state)
-    componentDidMount()
+    componentDidMount() - done
 
 Updating
     static getDerivedStateFromProps()
@@ -42,3 +46,22 @@ Project 2 - Shopping Cart
 Next.js 
 Mongodb 
 Node.js
+
+
+Actions 
+
+    LoadProducts 
+    AddProduct 
+    RemoveProduct
+
+Reducers 
+
+    Function which update state based on action
+
+Store
+
+View (Component) -> Dispatch action
+
+
+type(pin):"@@INIT"
+"REMOVE_PRODUCT" index 1

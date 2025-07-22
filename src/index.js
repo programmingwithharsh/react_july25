@@ -3,16 +3,15 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import 'font-awesome/css/font-awesome.css';
-
-import Main from './Main'; // Import Main Component
+import App from './App';
+import { legacy_createStore as createStore } from 'redux';
+import { Provider } from 'react-redux';
+import ProductReducer from './redux/reducers';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const username = "Rohan"; // string
-const hobbies = ["Mobile Gaming", "Cricket", "Walking", "Running"]; // Array
-const birth = { // object
-    year: 2000,
-    place: "Mumbai"
-}
+const store = createStore(ProductReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()); // creating store
 
-root.render(<Main usernameProps={username} hobbiesProps={hobbies} birthProps={birth} />); // calling Main Component
+root.render(<Provider store={store}>
+    <App />
+</Provider>); // calling Main Component
