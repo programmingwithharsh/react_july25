@@ -216,4 +216,72 @@ useState
 useEffect
 axios module
 
+Assignment 8 - Implement Redux Setup in react application
+
+Implement Redux Setup in react application
+
+Step 1
+npm i redux react-redux
+
+Step 2
+Create redux and data folder inside src folder
+
+redux
+    reducers.js file
+    actions.js file
+data
+    products.js 
+
+actions.js
+https://github.com/programmingwithharsh/react_march25/blob/main/src/redux/actions.js
+
+reducers.js
+https://github.com/programmingwithharsh/react_march25/blob/main/src/redux/reducers.js
+
+Step 3
+index.js -> Main.js file (current approach)
+
+Create App.js
+index.js -> App.js file -> Main.js (revised)
+
+App.js file
+https://github.com/programmingwithharsh/react_march25/blob/main/src/App.js
+
+Step 4
+Store setup
+Update index.js file
+index.js -> App.js file
+
+index.js file
+https://github.com/programmingwithharsh/react_march25/blob/main/src/index.js
+
+Step 5
+call action inside component (dispatch action inside component)
+
+Main.js file
+https://github.com/programmingwithharsh/react_march25/blob/main/src/Main.js 
+
+import { removeProduct, addProduct, loadProducts } from './redux/actions';
+ componentDidMount() { // call after render, this is the best place where we can call API
+        console.log('ComponentDidMount 3');
+        this.props.dispatch(removeProduct(1));
+        this.props.dispatch(addProduct({
+            "productId": 6,
+            "productName": "Iphone",
+            "productCode": "101",
+            "releaseDate": "October 15, 2025",
+            "description": "Excellent phone",
+            "price": 80000,
+            "starRating": 5,
+            "imageUrl": "https://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png&quot;
+        }));
+        this.props.dispatch(loadProducts());
+    }
+
+Step 6
+Debugging code using Redux Devtool 
+https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?pli=1
+
+Note: Mark as done once completed
+
 */
