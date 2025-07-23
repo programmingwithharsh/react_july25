@@ -1,0 +1,25 @@
+React js
+https://github.com/programmingwithharsh/react_july25/
+
+React Typescript 
+https://github.com/programmingwithharsh/react_ts_july25
+
+Node + Express Framework
+https://github.com/programmingwithharsh/node_express_framework_july25
+
+Next js
+Next.js Installation steps below
+npx create-next-app@latest
+Need to install the following packages:
+create-next-app@15.4.3
+Ok to proceed? (y) y
+✔ What is your project named? … dashboard-next
+✔ Would you like to use TypeScript? … No / Yes
+✔ Would you like to use ESLint? … No / Yes
+✔ Would you like to use Tailwind CSS? … No / Yes
+✔ Would you like your code inside a `src/` directory? … No / Yes
+✔ Would you like to use App Router? (recommended) … No / Yes
+✔ Would you like to use Turbopack for `next dev`? … No / Yes
+✔ Would you like to customize the import alias (`@/*` by default)? … No / Yes
+
+https://github.com/programmingwithharsh/nextjs_july25
