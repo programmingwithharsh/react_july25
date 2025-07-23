@@ -114,15 +114,6 @@ Assignment
 Project Update
 
 Day 5
-useRef 
-Controlled vs Uncontrolled component
-Custom hooks
-Class Component lifecycle
-getDerivedStateFromProps
-shouldComponentUpdate
-getSnapshotBeforeUpdate
-componentDidUpdate
-componentWillUnmount
 Redux
 Reducer
 Action
