@@ -11,7 +11,7 @@ Next.js Routing
 Slug Url
 Navigation
 useParams in Next.js
-Link in Nex.js
+Link in Next.js
 Creating APIs using Next.js
 Created GET, POST, PUT and DELETE API using next.js
 Consume Next APIs internally using fetch method

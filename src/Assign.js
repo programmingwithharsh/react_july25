@@ -284,4 +284,68 @@ https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkp
 
 Note: Mark as done once completed
 
+Assignment 9 - Create Next.js Component
+
+Create below Functional Components
+
+Create Main Component and call Main component inside page.js file, and inside Main component call all below components
+
+Home Page
+1. Create HomePage Component and display Home page message.
+
+Header and Footer
+2. Create Header Component and display Header Message.
+3. Create Footer Component and display Footer Message.
+
+Login Purpose
+4. Create Register Component and display register message.
+5. Create Login Component and display login message.
+
+Products
+6. Create ProductList Component and display product list message.
+7. Create AddProduct Component and display add product message.
+8. Create EditProduct Component and display edit product message.
+9. Create ProductDetail Component and display product detail message.
+
+Category
+10. Create CategoryList Component and display category list message.
+11. Create AddCategory Component and display add category message.
+12. Create EditCategory Component and display edit category message.
+
+Shopping Detail
+13. Create ShoppingDetail component and display shopping detail message.
+
+Payment Detail
+14. Create PaymentDetail Component and display Payment detail message.
+
+Order Confirmation
+15. Create OrderConfirmed Component and display order confirm message.
+
+Cart Details
+16. Create CartDetail Component and display cart message.
+
+Admin Purpose
+17. Create Admin Component and display admin message.
+
+Assignment 10 - Install Bootstrap in next.js
+
+Install Bootstrap in next.js, below are the steps 
+
+Step 1 - Go inside project and run below command 
+npm i bootstrap
+
+Step 2 - For Bootstrap CSS Components
+In src/app/layout.js
+import 'bootstrap/dist/css/bootstrap.css';
+
+Step 3 - For Bootstrap Javascript Components
+Create new component let's say BootstrapClient and use bootstrap.bundle.js inside it
+
+For reference purpose use below link
+https://github.com/programmingwithharsh/dashboard_next_june25/blob/main/src/app/bootstrap-client.js
+https://github.com/programmingwithharsh/dashboard_next_june25/blob/main/src/app/layout.js
+
+Step 4
+Use Bootstrap Classes to test, for example 
+https://getbootstrap.com/docs/5.3/components/buttons/
 */
