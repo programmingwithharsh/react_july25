@@ -17,7 +17,6 @@ import { removeProduct, addProduct, loadProducts } from './redux/actions';
 export default class Main extends React.Component {
     constructor(props) {
         super(props);
-        console.log("Constructor - 1");
         this.state = {
             address: "Mumbai",
             hobbies: ["Singing", "Music", "Dance", "Chess"],
@@ -109,13 +108,10 @@ export default class Main extends React.Component {
     }
 
     render() { // Class Component Lifecycle
-        console.log("Render - 2");
-        console.log(this.state);
-        console.log(this.props);
         return <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Nav />}>
-                    <Route index element={<Welcome />} />
+                    <Route index element={<Welcome username="Rushabh" />} />
                     <Route path="/products" element={<ProductList products={this.state.products} />} />
                     <Route path="/addproduct" element={<AddProduct onAddProduct={() => this.addProduct()} />} />
                     <Route path="/title" element={<Title username="Tushar" />} />

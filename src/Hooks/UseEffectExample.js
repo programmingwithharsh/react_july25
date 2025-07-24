@@ -17,7 +17,7 @@ function UseEffectExample() {
     */
 
     useEffect(() => {
-        fetch('http://localhost:4000/users',
+        fetch('https://jsonplaceholder.typicode.com/users',
             {
                 method: "GET"
             }
@@ -30,7 +30,7 @@ function UseEffectExample() {
     }, []);
 
     useEffect(() => {
-        axios.get('http://localhost:4000/users')
+        axios.get('https://jsonplaceholder.typicode.com/users')
             .then(function (response) {
                 // handle success
                 console.log("Axios", response);

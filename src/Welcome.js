@@ -1,8 +1,8 @@
 import React from "react";
-// class Welcome extends React.Component {
-class Welcome extends React.PureComponent {
-    constructor() {
-        super();
+class Welcome extends React.Component {
+    // class Welcome extends React.PureComponent {
+    constructor(props) {
+        super(props);
         console.log('Constructor - 1');
         this.state = {
             username: "Pramod"
@@ -37,6 +37,7 @@ class Welcome extends React.PureComponent {
         }
         ])) // Array
 
+        /*
         console.log(typeof localStorage.getItem("x"));
         console.log(typeof localStorage.getItem("username"));
         console.log(typeof localStorage.getItem("active"));
@@ -50,6 +51,7 @@ class Welcome extends React.PureComponent {
         console.log(localStorage.getItem("flowers"));
         console.log(JSON.parse(localStorage.getItem("user")));
         console.log(JSON.parse(localStorage.getItem("users")));
+        */
     }
 
     updateUsername = () => {
@@ -58,12 +60,40 @@ class Welcome extends React.PureComponent {
         })
     }
 
+    componentWillUnmount() {
+        console.log('Welcome component Will Unmount');
+    }
+
+    /*
+    shouldComponentUpdate() {
+        // by default return true
+        return true;
+    }
+
+    
+    static getDerivedStateFromProps(props, state) { // update state "Mumbai" from props "Hyderabad"
+        return {
+            username: props.username
+        }
+    }
+    */
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        document.getElementById("div1").innerHTML = "Before upate username is " + prevState.username
+        return true;
+    }
+
+    componentDidUpdate() {
+        document.getElementById("div2").innerHTML = "After upate username is " + this.state.username
+    }
+
     render() {
         console.log('Render - 2');
-        console.log(this.state.username);
         return <>
             <h1>This is Welcome Class Component</h1>
             <p>Username is {this.state.username}</p>
+            <div id="div1"></div>
+            <div id="div2"></div>
             <button className="btn btn-secondary" onClick={this.updateUsername}>Update username</button>
         </>
     }
