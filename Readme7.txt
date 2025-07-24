@@ -8,18 +8,15 @@ shouldComponentUpdate
 getSnapshotBeforeUpdate
 componentDidUpdate
 componentWillUnmount
-
 Unit Testing
-Deployment
-
 Redux Thunk
+Deployment
+Assignment 
+Project Update
 
 Next session
 Webpack Module Bundler
 Debug React App using VS Code
-
-Assignment 
-Project Update
 
 Class Component lifecycle
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
