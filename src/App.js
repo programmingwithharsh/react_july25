@@ -1,11 +1,13 @@
-import Main from './Main';
-import { connect } from 'react-redux';
+// src/App.js
+import React from 'react';
+import Counter from './features/counter/Counter';
 
-function mapStateToProps(state) {
-    return {
-        products: state
-    }
+function App() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
 }
 
-const App = connect(mapStateToProps)(Main);
 export default App;

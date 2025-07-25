@@ -126,5 +126,60 @@ State and Props using React Typescript
 Assignment 
 Project Update
 
-Upcoming
-Next.js
+Day 6
+Project demo for Viram, Mayuresh
+Mongodb Introduction
+Mongodb Compass
+Mongodb Database, Collections and Insert Documents 
+Import JSON File
+Next.js features
+Create next.js components
+Functional and Class Component
+Create next.js application
+Next.js Routing
+Slug Url
+Navigation
+useParams in Next.js
+Link in Next.js
+Creating APIs using Next.js
+Created GET, POST, PUT and DELETE API using next.js
+Consume Next APIs internally using fetch method
+Connect Next.js with Mongodb using Mongoose library
+Use env file
+Assignment
+Project Update 
+
+Day 7
+Project Demo for Subham and Ajay
+useRef 
+Controlled vs Uncontrolled component
+Custom hooks
+Class Component lifecycle
+getDerivedStateFromProps
+shouldComponentUpdate
+getSnapshotBeforeUpdate
+componentDidUpdate
+componentWillUnmount
+Unit Testing
+Redux Thunk
+Deployment
+Assignment 
+Project Update
+
+Day 8
+Project Demo for Rajesh, Affan and Rupesh
+Comparison between Angular, React and Next.js
+useSelector, useDispatch
+Redux Toolkit
+getStaticProps, getServerSideProps
+Static Generation (SSG) vs Server-side Rendering (SSR) 
+Next.js Layouts
+Vercel
+Webpack
+Assignment 
+Project Update 
+Queries
+Project Demo
+Revision
+Post Assessment 
+Feedback

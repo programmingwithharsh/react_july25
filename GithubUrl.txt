@@ -23,3 +23,6 @@ Ok to proceed? (y) y
 ✔ Would you like to customize the import alias (`@/*` by default)? … No / Yes
 
 https://github.com/programmingwithharsh/nextjs_july25
+
+Next Auth
+https://github.com/programmingwithharsh/next-auth-july25
